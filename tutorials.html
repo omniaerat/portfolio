@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnia-Erat Tutorial</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <meta name="description" content="Pixel Art tutorials for intermediate/mid level based in my personal experience. Beginners are welcome as well.">
+    <script src="bootstrap.js"></script>
+    <style>
+        .menu-link {
+            text-decoration: none;
+            color: white;
+        }
+        .menu-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white fs-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h1 class="w-100 text-center my-3">Omnia-Erat Portfolio</h1>
+            </div>
+        </div>
+        <div class="row sticky-top bg-black">
+            <div class="col-12">
+                <div class="row text-white py-4">
+                    <div class="col-3 col-md-2 border-start border-end text-center">
+                        <a class="menu-link" href="/">Home</a>
+                    </div>
+                    <div class="col-3 col-md-2 border-start border-end text-center">
+                        <a class="menu-link" href="/unfinished.html">Unfinished</a>
+                    </div>
+                    <div class="col-3 col-md-2 border-start border-end text-center">
+                        <a class="menu-link" href="/tutorials.html">Tutorials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-2">
+                <h2 class="w-100 text-center">Pixel Art Tutorial - Intermiate Level (Beginners are welcome as well)</h2>
+                <p>Totally based in my experience and style.</p>
+            </div>
+            <div class="col-12">
+                <div class="accordion accordion-flush" id="tutorials">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button id="flush-1-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-1" aria-expanded="false" aria-controls="flush-1" onclick="on_open(1)">
+                            #1 - Canvas Size
+                        </button>
+                        </h2>
+                        <div id="flush-1" class="accordion-collapse collapse" data-bs-parent="#tutorials">
+                            <div class="accordion-body">
+                                <div class="text-break">
+So, one of the most said thing in pixel art is "start with small canvas, it is easier and throughout your journey you increase its size". This turned out to be a lie to me, and if you feel your pixel art are bad it might be to you as well.
+<br /><br />
+I admit that small canvas are actually faster than the big ones. A 32 by 32 sprite is surely complete in less time then 128 by 128, but not exactly easier.
+<br /><br />
+See, pixel art is an option, it is a style choice of art, and as you might think, it can be hard, mainly if you are starting. If you start pixel art underestimate it the chances you don't get neither a beautiful nor fast piece are high. The moment you understand it is a stylistic choice you let it go the attachment of time and that you should do things fast, things start flourishing.
+<br /><br />
+Pixel Art is mostly based in simplify forms and agglutinate similar things to imply a group/cluster of the same thing and repeating, breaking, adding details in them is what give texture that allow our brain to read this small version of something as the thing itself.
+<br /><br />
+Transforming a high resolution knight with all armor, swords, shines and joints into a small resolution itself in 128 by 128 it is hard, making a 32 it is even harder because you will need to make even more simplification but still needing to keep the idea intact.
+<br /><br />
+So, what worked for me and my suggestion. I started in 16x16 and I felt I was doing a terrible job, then switched to 8x8 and I felt discouraged. Then I went to 32s, still awful, 64, awful, 128 oh wait, it is now readable as something I want, 256s too much work but it even better, 512s too much work and it is terrible; gone back to 128 and saw progress and after some different art in this canvas size range, something around 96s and 180s, I went down again in 64s, 32s and it way better than before. Obviously, I learned a lot meanwhile, but I am pretty sure increasing my canvas size was beneficial, because I started to create visually readable and appealing thigs, I got bit more motivated and I didn't give up.
+<br /><br />
+This might be your case. Probably most part of people handle 32s well as their first comfortable canvas size, but some might not. So I recommend to jump straight to 128 and increasing or decreasing its size if you feel it is too much space or too few pixels to let you make a good readable thing. I think this could be a good first step for beginners, but I wrote this thinking of new-intermediate or even intermediate level, because I feel I am one and realising this helped me a lot to improve my pixel art. Just be aware that increasing the canvas size it will increase the time you spend in a piece and some other skills such as gradient control, how to go up in your colour ramp, but this is for a next tutorial. Experiment different size of canvas and think in how you feel about it.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="w-100 text-center">Social Medias</h2>
+                <ul>
+                    <li><a href="https://omniaerat.itch.io/">Itch.io</a></li>
+                    <li><a href="https://www.artstation.com/omnia-erat">Art Station</a></li>
+                    <li><a href="https://pixeljoint.com/p/266128.htm">Pixel Joint</a></li>
+                    <li><a href="https://www.patreon.com/c/omniaerat">Patreon</a></li>
+                    <li><a href="https://ko-fi.com/omniaerat">Ko-Fi</a></li>
+                    <li><a href="https://www.instagram.com/omniaerat/">Instagram</a></li>
+                    <li><a href="https://x.com/omniaerat">X/Twitter</a></li>
+                    <li><a href="https://bsky.app/profile/omniaerat.bsky.social">Blue Sky</a></li>
+                    <li><a href="https://www.youtube.com/@OmniaErat">YouTube</a></li>
+                    <li><a href="https://www.twitch.tv/omniaerat">Twitch</a></li>
+                    <li><a href="https://github.com/omniaerat">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script defer>
+        function on_open(__number) {
+            localStorage.setItem("__last_tutorial", __number)
+        }
+        if (localStorage.getItem("__last_tutorial")) {
+            var _button = document.getElementById("flush-" + localStorage.getItem("__last_tutorial") + "-button")
+            var _accordion = document.getElementById("flush-" + localStorage.getItem("__last_tutorial"))
+            if (_accordion && _button) {
+                _accordion.classList.add("show")
+                _button.classList.remove("collapsed")
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
